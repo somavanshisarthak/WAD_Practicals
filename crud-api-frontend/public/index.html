@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Student CRUD</h1>
+
+  <p id="message" class="message" aria-live="polite"></p>
+
+  <section class="card">
+    <h2 id="form-title">Add student</h2>
+    <form id="student-form">
+      <input type="hidden" id="edit-id" value="" />
+      <label>
+        Name
+        <input type="text" id="name" name="name" required />
+      </label>
+      <label>
+        Age
+        <input type="number" id="age" name="age" min="1" required />
+      </label>
+      <label>
+        Course
+        <input type="text" id="course" name="course" required />
+      </label>
+      <div class="form-actions">
+        <button type="submit" id="submit-btn">Add student</button>
+        <button type="button" id="cancel-btn" class="hidden">Cancel edit</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>All students</h2>
+    <button type="button" id="refresh-btn">Refresh list</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Course</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="student-rows"></tbody>
+    </table>
+    <p id="empty-hint" class="hint hidden">No students yet. Add one above.</p>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

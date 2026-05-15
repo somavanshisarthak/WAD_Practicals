@@ -1,0 +1,24 @@
+{
+  "name": "student-crud-api",
+  "version": "1.0.0",
+  "description": "Basic Student CRUD API with Express and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "crud"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
+    "mongoose": "^8.24.0"
+  },
+  "author": "",
+  "type": "commonjs"
+}
