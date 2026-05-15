@@ -1,0 +1,8 @@
+@if (user) {
+  <div class="card">
+    <h2>Profile</h2>
+    <p><span class="label">Name:</span> {{ user.name }}</p>
+    <p><span class="label">Email:</span> {{ user.email }}</p>
+    <button type="button" (click)="logout()">Logout</button>
+  </div>
+}

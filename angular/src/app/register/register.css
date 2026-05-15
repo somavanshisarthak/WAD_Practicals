@@ -1,0 +1,43 @@
+.card {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.hint {
+  color: #b45309;
+  font-size: 0.85rem;
+  margin: 4px 0 0;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.footer {
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
